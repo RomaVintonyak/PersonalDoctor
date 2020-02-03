@@ -28,36 +28,25 @@
 .mt-2 {
   margin-top: 2rem;
 }
-.transform {
-  transform: rotate(-45deg);
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.white {
-  color: @white;
-}
 .zoomIn {
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
   &:hover {
     -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
     transform: scale(0.9);
     cursor: pointer;
   }
 }
 .zoomOut {
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
   &:hover {
     -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1);
     cursor: pointer;
   }
-}
-.hide {
-  display: none;
-}
-.blue__header {
-  color: @blue!important;
 }
