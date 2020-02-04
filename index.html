@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--meta tags-->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="We have Best Medicare plan options for you"
+    />
+    <meta name="keywords" content="CarePoint" />
+    <meta name="google" content="notranslate" />
+    <meta name="author" content="dt_developer" />
+    <meta name="robots" content="index, follow" />
     <!--google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600,700&display=swap&subset=latin-ext"
@@ -19,15 +28,7 @@
     />
     <!--custom styles-->
     <link rel="stylesheet" href="css/style.css" />
-    <meta
-      name="description"
-      content="We have Best Medicare
-      plan options for you"
-    />
-    <meta name="keywords" content="CarePoint" />
-    <meta name="google" content="notranslate" />
-    <meta name="author" content="dt_developer" />
-    <meta name="robots" content="index, follow" />
+    <!--five icon-->
     <title>CarePoint best doctor</title>
   </head>
   <body>
@@ -42,14 +43,14 @@
           </div>
           <!--/.header__logo-->
           <div class="header__content">
-            <div class="content__item">
+            <div class="content__item wow fadeIn" data-wow-duration="3s">
               <span><i class="far fa-clock"></i></span>
               <div class="item__text">
-                <h4>work time: 09:00&ndash;17:00</h4>
-                <p>Saturday and Sanday&ndash;CLOSED</p>
+                <h4>work time: 09:00 &ndash; 17:00</h4>
+                <p>Saturday and Sunday &ndash; CLOSED</p>
               </div>
             </div>
-            <div class="content__item">
+            <div class="content__item wow fadeIn" data-wow-duration="3s">
               <span><i class="fas fa-envelope"></i></span>
               <div class="item__text">
                 <h4>Mail Us</h4>
@@ -58,7 +59,7 @@
                 >
               </div>
             </div>
-            <div class="content__item">
+            <div class="content__item wow fadeIn" data-wow-duration="3s">
               <span><i class="fas fa-tablet-alt"></i></span>
               <div class="item__text">
                 <h4>call us</h4>
@@ -69,8 +70,70 @@
           <!--/.header__content-->
         </div>
         <!--/.header__top-->
+        <!--nav menu-->
+        <nav class="nav__bar">
+          <ul class="nav__menu wow fadeInLeft" data-wow-duration="3s">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+          <ul class="social__menu wow fadeInRight" data-wow-duration="3s">
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank"
+                ><i class="fab fa-google-plus"></i
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank"
+                ><i class="fab fa-vk"></i
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <!--/.container-->
     </header>
+    <!--intro section-->
+    
+
+    <!--jQuery-->
+    <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+    <!--wow animation https://wowjs.uk/-->
+    <script type="text/javascript" src="js/vendor/wow.min.js"></script>
+    <!--use wow animation-->
+    <script type="text/javascript">
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
+      });
+      wow.init();
+    </script>
+    <!--use script add class nav__link--active-->
+    <script type="text/javascript" src="js/block/nav__link.js"></script>
   </body>
 </html>
