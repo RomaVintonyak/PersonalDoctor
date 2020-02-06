@@ -1,17 +1,20 @@
 //main: ../style.less
-.gallery__bg{
-  background: url(../img/gallery/galley_bg.jpg)no-repeat center;
+.gallery__bg {
+  background: url(../img/gallery/galley_bg.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
   width: 100%;
 }
-.gallery__content{
+.gallery__content {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 2rem 0;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
-  a{
+  a {
     display: block;
     width: 30%;
     margin: 1rem;
