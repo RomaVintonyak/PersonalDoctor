@@ -1,0 +1,66 @@
+//main: ../style.less
+#backTop {
+  width: 3rem;
+  height: 3rem;
+  background: @blue;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(@blue),
+    to(@green-l)
+  );
+  background: linear-gradient(to right, @blue, @green-l);
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border-radius: 50%;
+  z-index: 99;
+  opacity: 0.6;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  span {
+    width: 1rem;
+    height: 1rem;
+    border-top: 2px solid @white;
+    border-right: 2px solid @white;
+    opacity: 0.6;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 0.5rem;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(@blue),
+      to(@green-l)
+    );
+    background: linear-gradient(to left, @blue, @green-l);
+    box-shadow: 0 0 10px @blue;
+    span {
+      opacity: 1;
+    }
+    &:active {
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(@blue),
+        to(@green-l)
+      );
+      background: linear-gradient(to bottom, @blue, @green-l);
+    }
+  }
+}
