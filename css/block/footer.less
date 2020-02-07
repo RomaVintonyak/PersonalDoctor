@@ -1,0 +1,120 @@
+//main: ../style.less
+.footer__bg {
+  background-color: @black;
+  width: 100%;
+}
+.footer__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+.footer__colum {
+  display: -webkit-box;
+  display: flex;
+  width: 22%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  h5 {
+    font-family: @monserat;
+    font-size: 1.3rem;
+    color: @white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+}
+.colum__contact {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  i {
+    color: @white;
+    font-size: 3rem;
+    margin-right: 2rem;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.contact__text {
+  p {
+    color: rgba(@white, 0.7);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.colum__links {
+  margin-top: 1.5rem;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  i {
+    color: @blue;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  }
+  &:hover {
+    i {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  a {
+    text-decoration: none;
+    color: rgba(@white, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.form__colum {
+  input {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(@white, 0.6);
+    padding-left: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: @white;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid rgba(@white, 1);
+    }
+  }
+  textarea {
+    resize: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(@white, 0.6);
+    padding-left: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: @white;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid rgba(@white, 1);
+    }
+  }
+}
