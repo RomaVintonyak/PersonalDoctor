@@ -17,8 +17,21 @@
     font-size: 1.1rem;
     color: rgba(@gray, 0.8);
     line-height: 1.875;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: @blue;
+      transition: width 0.5s linear;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
   }
-  &--img{
+  &--img {
     margin: 0 1rem;
     margin-left: -1.5rem;
   }
@@ -40,7 +53,7 @@
     animation-name: spanBG;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
     transition: background-color 0.3s ease-in-out;
     i {
       color: @white;
@@ -55,20 +68,20 @@
     line-height: 1.2;
   }
 }
-@keyframes spanBG{
-  0%{
+@keyframes spanBG {
+  0% {
     background-color: #1dd1ad;
   }
-  25%{
+  25% {
     background-color: #2db0c2;
   }
-  50%{
+  50% {
     background-color: #27a3a3;
   }
-  75%{
+  75% {
     background-color: #37c3a8;
   }
-  100%{
+  100% {
     background-color: #1dd1ad;
   }
 }
