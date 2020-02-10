@@ -16,6 +16,7 @@
   width: 20%;
   -webkit-box-align: center;
   align-items: center;
+  position: relative;
   img {
     border-radius: 50%;
     opacity: 0.7;
@@ -40,6 +41,40 @@
   &:hover {
     img {
       opacity: 1;
+    }
+    .team__contact {
+      visibility: visible;
+    }
+  }
+}
+.team__contact {
+  position: absolute;
+  top: 30%;
+  visibility: hidden;
+  transition: visibility 0.1s ease-in-out;
+  a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    background: @white;
+    line-height: 50px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+    i {
+      color: @blue;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+  &:hover {
+    a {
+      background: transparent;
+      border: 2px solid @white;
+    }
+    i {
+      color: @white;
     }
   }
 }
