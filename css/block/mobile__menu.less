@@ -1,0 +1,56 @@
+//main: ../style.less
+.mobile__menu {
+  width: 100%;
+  height: 35vh;
+  background-color: @white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: fixed;
+  left: -100%;
+  z-index: 5;
+  -webkit-transition: left 0.5s linear;
+  transition: left 0.5s linear;
+  margin-top: -0.1rem;
+  .social__menu {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 20%;
+  }
+  &--open {
+    left: 0;
+  }
+}
+.nav__bar--mobile {
+  width: 100%;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  .nav__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    .nav__item {
+      margin: 0;
+      margin-bottom: 1.3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.header__content--mobile {
+  .content__item {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

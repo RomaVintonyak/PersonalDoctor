@@ -12,10 +12,10 @@ jQuery(document).ready(function () {
         scrollOfset = $(this).scrollTop();
         if (scrollOfset >= introH) {
             header.addClass("fixed__header");
-            $(".header__top").css("margin-top", "0.3rem");
+            $(".header__top").css("margin-top", "0.8rem");
         } else {
             header.removeClass("fixed__header");
-            $(".header__top").css("margin-top", "1rem");
+            $(".header__top").css("margin-top", "1.2rem");
         }
     }
 });

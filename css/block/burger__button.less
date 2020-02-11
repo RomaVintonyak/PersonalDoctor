@@ -6,7 +6,7 @@
   border-radius: 5px;
   background-color: rgba(@gray-l, 0.3);
   display: -webkit-box;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
@@ -24,10 +24,10 @@
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
     &:first-child {
-      margin-top: -0.53rem;
+      margin-top: -0.5rem;
     }
     &:last-child {
-      margin-top: 0.5rem;
+      margin-top: 0.55rem;
     }
   }
   &:hover {
@@ -37,6 +37,9 @@
     &:active {
       background-color: rgba(@gray-l, 0.9);
     }
+  }
+  @media @tablet {
+    display: flex;
   }
 }
 .open {

@@ -4,5 +4,6 @@ jQuery(document).ready(function(){
   burgerBtn.on("click", function(event){
     event.preventDefault();
     $(".burger__icon").toggleClass("open");
+    $(".mobile__menu").toggleClass("mobile__menu--open");
   });
 });
