@@ -1,0 +1,57 @@
+//main: ../style.less
+.burger__button {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid @gray-l;
+  border-radius: 5px;
+  background-color: rgba(@gray-l, 0.3);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  span {
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background-color: @gray;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    &:first-child {
+      margin-top: -0.53rem;
+    }
+    &:last-child {
+      margin-top: 0.5rem;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(@gray-l, 0.6);
+    box-shadow: 0 0 10px rgba(@gray-l, 0.8);
+    &:active {
+      background-color: rgba(@gray-l, 0.9);
+    }
+  }
+}
+.open {
+  &:first-child {
+    width: 0;
+  }
+  &:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &:last-child {
+    width: 0;
+  }
+}
