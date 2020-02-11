@@ -11,6 +11,8 @@ jQuery(document).ready(function () {
     });
     scrollBtn.on("click", function (event) {
         event.preventDefault();
+        $(".burger__icon").removeClass("open");
+        $(".mobile__menu").removeClass("mobile__menu--open");
         $("html, body").animate({
             scrollTop: 0
         }, 2000);
