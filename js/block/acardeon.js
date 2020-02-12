@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-  "use script"
+  "use script";
   var acardeon = function () {
     var data = $(".right__acardeon").attr('data-acardeon');
     $(".acardeon__header").on("click", function () {

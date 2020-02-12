@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-    "use script"
+    "use script";
     var elemCount = $(".feature__count");
     var setTime = 20000;
     elemCount.each(function () {

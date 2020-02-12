@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-    "use script"
+    "use script";
     var introH = $("#intro").innerHeight();
     var scrollOfset = $(window).scrollTop();
     var header = $("header");

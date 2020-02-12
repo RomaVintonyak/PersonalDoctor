@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-  "use script"
+  "use script";
   var burgerBtn = $("#burgerToggle");
   burgerBtn.on("click", function(event){
     event.preventDefault();

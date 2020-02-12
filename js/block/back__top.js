@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-    "use script"
+    "use script";
     var scrollBtn = $("#backTop");
     scrollBtn.hide();
     $(window).on("scroll", function () {

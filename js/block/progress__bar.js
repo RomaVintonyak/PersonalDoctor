@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-    "use script"
+    "use script";
     $(function () {
         $(window).on("scroll resize", function () {
             var prog =

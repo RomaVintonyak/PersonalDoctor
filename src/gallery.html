@@ -557,25 +557,25 @@
             <!--/.footer__colum-->
             <!--footer__form-->
             <form
-              method="GET"
-              action="mail.php"
+              method="POST"
+              action="../php/form.php"
               class="footer__colum form__colum wow fadeInRight"
               data-wow-offset="50"
               data-wow-duration="3s"
             >
               <h5>Contact Form</h5>
-              <input type="text" name="text" id="formName" placeholder="Name" />
+              <input type="text" name="text" id="formName" placeholder="Name" required/>
               <input
                 type="tel"
                 name="phone"
                 id="formPhone"
                 placeholder="Phone"
-              />
+              required/>
               <textarea
                 name="message"
                 id="formMessage"
                 placeholder="Message"
-              ></textarea>
+              required></textarea>
               <button type="submit" class="btn btn--submit" id="formSubmit">
                 submit
               </button>
