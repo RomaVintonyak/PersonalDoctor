@@ -1,7 +1,9 @@
 //main: ../style.less
 .contact__content {
   margin: 5rem 0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: start;
   align-items: flex-start;
   justify-content: space-around;
 }
@@ -25,7 +27,10 @@
   }
 }
 .form__send {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   input {
     width: 100%;
@@ -54,7 +59,7 @@
       border-bottom: 1px solid rgba(@green, 1);
     }
   }
-  button{
+  button {
     width: 18%;
   }
 }
@@ -68,9 +73,22 @@
   margin-bottom: 2rem;
   background-color: rgba(@gray-l, 0.6);
   border-radius: 5px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-transition: box-shadow 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
   span {
     width: 3rem;
     height: 3rem;
@@ -91,14 +109,20 @@
     color: @gray;
     margin-bottom: 0.5rem;
   }
-  p{
+  p {
     font-family: @monserat;
     font-size: 0.8rem;
     font-weight: 400;
     color: @gray;
     margin-bottom: 0.5rem;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
+  }
+  &:hover {
+    box-shadow: 1px 1px @green-l, 2px 2px @green-l, 3px 3px @green-l,
+      4px 4px @green-l, 5px 5px @green-l, 6px 6px @green-l, 7px 7px @green-l;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
   }
 }
