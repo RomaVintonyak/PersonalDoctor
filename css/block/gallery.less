@@ -14,13 +14,16 @@
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
+  @media @mobile-sm {
+    margin: 1rem 0;
+  }
   a {
     display: block;
     width: 30%;
     margin: 1rem;
     text-decoration: none;
     position: relative;
-    &:after{
+    &:after {
       content: "";
       background: transparent url(../img/gallery/icon/eye-icon.png) no-repeat
         center;
@@ -32,10 +35,11 @@
       bottom: 0;
       right: 0;
       visibility: hidden;
+      -webkit-transition: visibility 0.4s linear;
       transition: visibility 0.4s linear;
     }
-    &:hover{
-      &:after{
+    &:hover {
+      &:after {
         visibility: visible;
       }
     }
