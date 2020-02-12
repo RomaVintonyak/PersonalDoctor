@@ -4,6 +4,12 @@
   height: 23rem;
   display: -webkit-box;
   display: flex;
+  @media @mobile {
+    height: 18rem;
+  }
+  @media @mobile-sm {
+    height: 12rem;
+  }
 }
 .services__colum {
   width: 25%;
@@ -20,6 +26,14 @@
   text-align: center;
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
+  @media @tablet {
+    padding: 0 0.5rem;
+  }
+  @media @mobile {
+    padding: 0.5rem 0.2rem;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
   &--1 {
     background-color: @blue;
   }
@@ -55,6 +69,14 @@
     margin-bottom: 1rem;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
+    @media @mobile {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 0.6rem;
+      margin-bottom: 0.9rem;
+    }
   }
   p {
     font-size: 1.1rem;
@@ -63,6 +85,9 @@
     font-weight: 400;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
+    @media @mobile-sm {
+      font-size: 0.6rem;
+    }
   }
   &:hover {
     background-color: @white;
