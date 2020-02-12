@@ -19,6 +19,17 @@
     -webkit-box-pack: center;
     justify-content: center;
     height: 20%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    @media @mobile-sm {
+      .social__item {
+        a {
+          i {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
   &--open {
     left: 0;
@@ -37,9 +48,15 @@
     flex-direction: column;
     .nav__item {
       margin: 0;
-      margin-bottom: 1.3rem;
+      margin-bottom: 1rem;
       &:last-child {
         margin-bottom: 0;
+      }
+      @media @mobile-sm {
+        margin-bottom: 0.5rem;
+        a {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -48,6 +65,24 @@
   .content__item {
     margin-bottom: 2rem;
     margin-right: 0;
+    @media @mobile-sm {
+      span {
+        margin-right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        i {
+          font-size: 1rem;
+        }
+      }
+      .item__text {
+        h4 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
