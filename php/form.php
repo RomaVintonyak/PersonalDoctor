@@ -18,7 +18,7 @@ $message = trim($message);
 $yourMail = "19roman23@gmail.com"; //your email here
 $yourText = "response from the site"; //your title here
 
-if (mail(".$yourMail", "$yourText", "Name:".$name.". Y-Phone: ".$phone. "Message: ".$message ,"From: .$name \r\n"))
+if (mail(".$yourMail", ".$yourText", "Name:".$name.". Y-Phone: ".$phone. "Message: ".$message ,"From: .$name \r\n"))
  {     echo "The message was successfully sent";
 } else {
     echo "Message not sent";
