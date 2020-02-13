@@ -14,14 +14,8 @@
   }
 }
 .team__colum {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
   width: 20%;
-  -webkit-box-align: center;
-  align-items: center;
+  text-align: center;
   position: relative;
   @media @tablet {
     width: 35%;
@@ -73,10 +67,12 @@
 .team__contact {
   position: absolute;
   top: 30%;
+  width: 100%;
   visibility: hidden;
   -webkit-transition: visibility 0.1s ease-in-out;
   transition: visibility 0.1s ease-in-out;
   a {
+    margin: 0 auto;
     display: block;
     width: 3rem;
     height: 3rem;
