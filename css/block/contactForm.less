@@ -6,9 +6,22 @@
   -webkit-box-align: start;
   align-items: flex-start;
   justify-content: space-around;
+  @media @mobile {
+    margin: 2rem 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .contact__form__colum {
   width: 55%;
+  @media @mobile {
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 .form__hader {
   h2 {
@@ -17,6 +30,9 @@
     color: @gray;
     font-weight: 700;
     margin-bottom: 1rem;
+    @media @mobile {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-family: @monserat;
@@ -61,10 +77,19 @@
   }
   button {
     width: 18%;
+    @media @mobile-sm {
+      width: 25%;
+    }
   }
 }
 .location__colum {
   width: 35%;
+  @media @mobile {
+    width: 70%;
+  }
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 .location__content {
   height: 6rem;
@@ -84,7 +109,11 @@
   transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-transition: box-shadow 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
