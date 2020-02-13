@@ -7,6 +7,12 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  @media @tablet {
+    height: 6rem;
+  }
+  @media @mobile {
+    height: 5rem;
+  }
 }
 .action__content {
   display: -webkit-box;
@@ -15,10 +21,30 @@
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  @media @mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
   p {
     font-size: 2rem;
     font-family: @monserat;
     color: @gray;
     font-weight: 700;
+    @media @notebook {
+      font-size: 1.7rem;
+    }
+    @media @tablet {
+      font-size: 1.2rem;
+    }
+    @media @mobile {
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+    }
+    @media @mobile-sm {
+      font-size: 0.65rem;
+    }
   }
 }
