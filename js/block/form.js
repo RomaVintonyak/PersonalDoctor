@@ -1,5 +1,5 @@
-$(function() {
-  "use strict";
+jQuery(document).ready(function(){
+    "use script";
   $("#formSubmit").on("click", function() {
     var name = $("#formName")
       .val()

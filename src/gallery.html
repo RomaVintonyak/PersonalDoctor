@@ -557,29 +557,30 @@
             <!--/.footer__colum-->
             <!--footer__form-->
             <form
-              method="POST"
-              action="../php/form.php"
-              class="footer__colum form__colum wow fadeInRight"
-              data-wow-offset="50"
-              data-wow-duration="3s"
-            >
-              <h5>Contact Form</h5>
-              <input type="text" name="text" id="formName" placeholder="Name" required/>
-              <input
-                type="tel"
-                name="phone"
-                id="formPhone"
-                placeholder="Phone"
-              required/>
-              <textarea
-                name="message"
-                id="formMessage"
-                placeholder="Message"
-              required></textarea>
-              <button type="submit" class="btn btn--submit" id="formSubmit">
-                submit
-              </button>
-            </form>
+            method="POST"
+            class="footer__colum form__colum wow fadeInRight"
+            data-wow-offset="50"
+            data-wow-duration="3s"
+            id="feedback"
+          >
+            <h5>Contact Form</h5>
+            <input type="text" name="name" id="formName" placeholder="Name"/>
+            <input
+              type="email"
+              name="email"
+              id="formEmail"
+              placeholder="Your E-mail"
+            />
+            <textarea
+              name="message"
+              id="formMessage"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="btn btn--submit" id="formSubmit">
+              submit
+            </button>
+            <div id="erorMesag"></div>
+          </form>
             <!--/.footer__form-->
           </div>
           <!--/.footer__content-->
@@ -643,5 +644,7 @@
     <script src="../js/block/fixed__header.js"></script>
     <!--use script burgerToggle-->
     <script src="../js/block/burgerToggle.js"></script>
+     <!--use script form.js-->
+     <script src="../js/block/form.js"></script>
   </body>
 </html>

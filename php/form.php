@@ -12,7 +12,7 @@ $headers = "From: $mail\r\nReply-to: $mail\r\nContent-type: text/html; charset=u
 $text = "\n\nName: ".$name."\n\nE-mail: " .$mail."\n\nMessage ".$mass."\n\n";
 
 
-$success = mail("19roman23@gmail.com",  $subject, $massage, $mail, $name, $headers);
-echo $success;
+mail("Yourmail@mail.com",  $subject, $massage, $headers);
+
 
 ?>
