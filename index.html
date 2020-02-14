@@ -975,14 +975,15 @@
               class="footer__colum form__colum wow fadeInRight"
               data-wow-offset="50"
               data-wow-duration="3s"
+              id="feedback"
             >
               <h5>Contact Form</h5>
-              <input type="text" name="text" id="formName" placeholder="Name" required/>
+              <input type="text" name="name" id="formName" placeholder="Name" required/>
               <input
-                type="tel"
-                name="phone"
-                id="formPhone"
-                placeholder="Phone"
+                type="email"
+                name="email"
+                id="formEmail"
+                placeholder="Your E-mail"
               required/>
               <textarea
                 name="message"
@@ -992,6 +993,7 @@
               <button type="submit" class="btn btn--submit" id="formSubmit">
                 submit
               </button>
+              <div id="erorMesag"></div>
             </form>
             <!--/.footer__form-->
           </div>
@@ -1064,5 +1066,7 @@
     <script src="js/block/cat__scroll.js"></script>
     <!--use script burgerToggle-->
     <script src="js/block/burgerToggle.js"></script>
+    <!--use script form.js-->
+    <script src="js/block/form.js"></script>
   </body>
 </html>

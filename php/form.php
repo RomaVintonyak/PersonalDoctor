@@ -1,27 +1,18 @@
 <?php
-$name = $_POST['text'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
 
-$name = htmlspecialchars($name);
-$phone = htmlspecialchars($phone);
-$message = htmlspecialchars($message);
+$name = trim(strip_tags($_POST['name']));
+$mail = trim(strip_tags($_POST['mail']));
+$massage = trim(strip_tags($_POST['mesag']));
 
-$name = urldecode($name);
-$phone = urldecode($phone);
-$message = urldecode($message);
 
-$name = trim($name);
-$phone = trim($phone);
-$message = trim($message);
+$subject = "=?utf-8?B?".base64_encode("CarePoint Best Doctor")."?=";
+$headers = "From: $mail\r\nReply-to: $mail\r\nContent-type: text/html; charset=utf-8\r\n";
 
-$yourMail = "19roman23@gmail.com"; //your email here
-$yourText = "response from the site"; //your title here
 
-if (mail(".$yourMail", ".$yourText", "Name:".$name.". Y-Phone: ".$phone. "Message: ".$message ,"From: .$name \r\n"))
- {     echo "The message was successfully sent";
-} else {
-    echo "Message not sent";
-}
+$text = "\n\nName: ".$name."\n\nE-mail: " .$mail."\n\nMessage ".$mass."\n\n";
+
+
+$success = mail("19roman23@gmail.com",  $subject, $massage, $mail, $name, $headers);
+echo $success;
 
 ?>
